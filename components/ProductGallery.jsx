@@ -1,12 +1,10 @@
 import Link from "next/link";
-{/* Product Gallery */}
 export default function ProductGallery(){
     return(
         <>
         <section className="py-16 px-6 md:px-12">
     <h3 className="text-3xl font-bold text-center mb-12">Productos Destacados</h3>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-      {/* Product Card */}
       {[...Array(8)].map((_, i) => (
         <div key={i} className="bg-white p-4 rounded-md shadow-lg hover:shadow-xl transition">
           <img
